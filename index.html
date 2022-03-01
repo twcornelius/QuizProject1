@@ -8,23 +8,27 @@
     
 
 <link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
 
-
-
-<style>
- 
-</style>
 
 </head>
+
 <body>
-    <script scr="index.js"></script>
+    
  <div id="main center">
-    <div class="welcome center">
+    <div id=greeting class="welcome">
 
     <p>Test your front end developer skills by answering the following questions</p>
-    <a href="question.html">
-    <button id="btnBegin" onclick="doSomething ();">Begin</button>
+    
+    <button id="btnBegin" onclick="doGame();">Begin</button>
     </button></div>
+    <div id="score-board" class="hide">
+  <div  id="timerContainer">Time Remaining:<span id= "timer" style="text-align:left"></span></div>
+  <span style="text-align:right">Score</span>
+    </div>
+    <div id="question" class="hide">
+        
+    </div>
  <div>
 
 </body>
@@ -32,4 +36,5 @@
 
     
 </body>
+
 </html>
