@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Game</title>
-    
-
-<link rel="stylesheet" href="style.css">
-<script src="index.js"></script>
-
-
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
-    
- <div id="main center">
-    <div id=greeting class="welcome">
-
-    <p>Test your front end developer skills by answering the following questions</p>
-    
-    <button id="btnBegin" onclick="doGame();">Begin</button>
-    </button></div>
-    <div id="score-board" class="hide">
-  <div  id="timerContainer">Time Remaining:<span id= "timer" style="text-align:left"></span></div>
-  <span style="text-align:right">Score</span>
+    <div id="main center">
+        <div id="greeting" class="welcome">
+            <p>Test your front end developer skills by answering the following questions.</p>
+            <!--<form> <button type="submit" formaction="/question.html"> Begin </button></form>-->
+            <button id="btnBegin" onclick="doGame();">Begin</button>
+        </div>
+        <div id="score-board" class="hide">
+            <div id="timerContainer">Time Remaining: <span id="timer" style="text-align:left"></span></div>
+            <div id="scoreContainer">Score: <span id="score" style="text-align:right"></span></div>
+        </div>
+        <div id="questions">
+            <div class="answer">
+                <input id="quest0_answer5" type="radio" name="quest0" class="answer quest0"></input>
+                <label for="quest0_answer5">A possible Answer</label></div>
+        </div>
     </div>
-    <div id="question" class="hide">
-        
-    </div>
- <div>
 
-</body>
-
-
-    
 </body>
 
 </html>

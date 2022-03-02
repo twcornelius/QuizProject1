@@ -7,6 +7,7 @@
     margin:auto;
     text-align: center;
     box-sizing: content-box;
+    position: absolute;
     
 
 
@@ -24,4 +25,17 @@ p {
 }
 #btnBegin {
     padding: 20px 30px;
+}
+
+.hide {
+    display: none;
+}
+
+.question {
+    color:black;
+
+}
+
+.answer {
+    color:
 }
