@@ -509,7 +509,24 @@ function showHighScores() {
         console.log("hScores[i].score: ", hScores[i].score);
         console.log("hScores[i].initals: ", hScores[i].initials);
         //update here to add array values to the table.
+        let highScoresDiv = document.getElementById('high-scores');
         i++;
+        function createTable(element, tableData) {
+            var table = document.createElement('table');
+          var tableBody = document.createElement('tbody');
+          tableData.forEach(function(rowData) {
+            var row = document.createElement('tr');
+            rowData.forEach(function(cellData) {
+              var cell = document.createElement('td');
+              cell.appendChild(document.createTextNode(cellData));
+              row.appendChild(cell);
+            });
+            tableBody.appendChild(row);
+          });
+          table.appendChild(tableBody);
+          element.appendChild(table);
+         }
+         
     }
 
     highScoresDiv.appendChild(table);
