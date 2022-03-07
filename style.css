@@ -87,5 +87,7 @@ table {
   }
   
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color:  yellow;
   } 
+
+  tr:hover {background-color: green;}
