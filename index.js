@@ -502,8 +502,7 @@ function showHighScores() {
     : [];
 
     //remove this line when you have updated the code.
-    alert('Update the code to show the high scores in a table');
-
+    
     let i=0;
     while(i<hScores.length ) {
         console.log("hScores[i].score: ", hScores[i].score);
